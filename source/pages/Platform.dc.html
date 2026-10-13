@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>WIRTIX — Platform</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preload" as="image" href="/_blob/05788629024ac8f2639a41259841f6a5" media="(min-width: 761px)" fetchpriority="high">
+<link rel="preload" as="image" href="/_blob/a611ae235178927aad536700cf2d47f9" media="(max-width: 760px)" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#070B12}
+a{color:#D4AF37}a:hover{color:#F2C94C}
+.wrap{max-width:1200px;margin:0 auto;padding:0 28px;box-sizing:border-box}
+.kicker{margin:0 0 18px;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#D4AF37}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;border-radius:8px;font-weight:800;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;box-sizing:border-box}
+.shero{background-image:linear-gradient(180deg, rgba(7,11,18,0.62) 0%, rgba(7,11,18,0.80) 60%, #070B12 100%), url(/_blob/7a4dd50797b28faf9387c81179b8f096);background-size:cover;background-position:center}
+.case{display:grid;grid-template-columns:minmax(0, 1fr) minmax(0, 1.15fr);border:1px solid rgba(255,255,255,0.1);border-radius:22px;overflow:hidden;background:#0B1528}
+.ending{background-image:radial-gradient(ellipse 50% 60% at 50% 40%, rgba(212,175,55,0.10), rgba(212,175,55,0) 70%)}
+@media (max-width: 900px){.case{grid-template-columns:minmax(0, 1fr)}.case > div:last-child{order:-1}}
+.burger{display:none;width:44px;height:44px;border-radius:10px;border:1px solid rgba(255,255,255,0.22);background:rgba(7,11,18,0.4);cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0}
+.mmenu{margin:0 16px;padding:8px 20px 12px;border:1px solid rgba(255,255,255,0.12);border-radius:16px;background:rgba(9,16,30,0.96);display:flex;flex-direction:column;position:relative;z-index:5}
+.mmenu a{display:block;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.08);color:#FFFFFF;text-decoration:none;font-size:18px;font-weight:800}
+.mmenu a:last-child{border-bottom:0}
+.mcta{display:none}
+.zoomable{display:block;padding:0;margin:0;border:0;background:none;cursor:zoom-in;color:inherit;font:inherit}
+.zhint{display:none}
+.lb{position:fixed;inset:0;z-index:100;background:#05080E;display:flex;flex-direction:column}
+.lb-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:calc(14px + env(safe-area-inset-top, 0px)) 16px 12px;color:#9AA4B5;font-size:13px;font-weight:600}
+.lb-x{width:44px;height:44px;border-radius:12px;border:1px solid rgba(255,255,255,0.25);background:#0E1A30;color:#FFFFFF;font-size:18px;cursor:pointer;flex:none}
+.lb-scroll{flex:1;overflow:auto;touch-action:pan-x pan-y pinch-zoom;display:flex;align-items:center;padding:16px}
+.lb-scroll img{display:block;flex:none;width:auto;max-width:min(100%, 1400px);height:auto;margin:auto}
+.bhead{display:block;width:100%;padding:0;margin:0;background:none;border:0;color:inherit;font:inherit;text-align:left;cursor:default}
+.bchev{display:none}
+.cnav{display:none;align-items:center;justify-content:space-between;margin-top:18px}
+@media (max-width: 900px){.dnav,.dright{display:none !important}.burger{display:flex}}
+@media (max-width: 760px){
+.wrap{padding-left:20px;padding-right:20px}
+.shero{min-height:0 !important}
+.shero > .wrap:last-child{padding-top:36px;padding-bottom:56px !important}
+.herocta .btn{width:100%}
+section{padding-top:72px !important;padding-bottom:72px !important}
+section.shero{padding:0 !important}
+.benrow{gap:12px !important}
+.bcard{border:1px solid rgba(255,255,255,0.12) !important;border-radius:16px;padding:6px 18px !important;background:rgba(13,26,50,0.6)}
+.bhead{display:flex;align-items:center;gap:14px;cursor:pointer;min-height:64px}
+.bhead > div{margin:0 !important;width:44px !important;height:44px !important;flex:none}
+.bhead h3{margin:0 !important;font-size:17px !important;flex:1}
+.bchev{display:inline-block;font-size:22px;line-height:1;color:#D4AF37;transition:transform 0.3s ease}
+.bbody{display:none;padding:0 0 16px 58px}
+.bbody.is-open{display:block}
+.fph{padding-bottom:96px !important}
+.zhint{display:inline-flex;position:absolute;right:10px;bottom:10px;padding:6px 10px;border-radius:999px;background:rgba(7,11,18,0.82);border:1px solid rgba(212,175,55,0.5);color:#F2D27A;font-size:11px;font-weight:700;letter-spacing:0.5px}
+.lb-scroll img{width:auto;max-width:none;min-width:100%}
+.mcta{display:flex;position:fixed;left:16px;right:16px;bottom:calc(14px + env(safe-area-inset-bottom, 0px));z-index:50;min-height:54px;align-items:center;justify-content:center;border-radius:12px;background:#D4AF37;color:#0A0F18;font-weight:800;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,0.5);transition:transform 0.3s ease, opacity 0.3s ease}
+}
+.hl{position:absolute;border:2px solid #F2D27A;border-radius:12px;box-shadow:0 0 0 4px rgba(212,175,55,0.18), 0 0 28px rgba(242,210,122,0.55);opacity:0;pointer-events:none;animation:hl 8s ease-in-out infinite}
+.ar{position:absolute;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:999px;background:#F2D27A;box-shadow:0 0 14px 4px rgba(242,210,122,0.8);opacity:0;pointer-events:none;animation:ar 8s ease-in-out infinite}
+.cap{grid-area:1 / 1;opacity:0;animation:hl 8s ease-in-out infinite;font-size:14px;line-height:1.5;color:#C9D0DB;text-align:center}
+@keyframes hl{0%{opacity:0}3%{opacity:1}22%{opacity:1}25%{opacity:0}100%{opacity:0}}
+@keyframes ar{0%{opacity:0;transform:translateY(-14px)}2%{opacity:1}6%{opacity:1;transform:translateY(14px)}8%{opacity:0;transform:translateY(14px)}100%{opacity:0}}
+@media (prefers-reduced-motion: reduce){.hl,.ar,.cap{animation:none}.hl,.cap{opacity:0}.cap:first-child{opacity:1}}
+.pgrid{background-color:#0C1C37;background-image:radial-gradient(ellipse 75% 70% at 50% 45%, rgba(12,28,55,0) 35%, #0C1C37 100%), linear-gradient(rgba(212,175,55,0.11) 1px, transparent 1px), linear-gradient(90deg, rgba(212,175,55,0.11) 1px, transparent 1px), linear-gradient(rgba(140,170,220,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(140,170,220,0.05) 1px, transparent 1px);background-size:100% 100%, 120px 120px, 120px 120px, 24px 24px, 24px 24px;background-position:center}
+.h2x{margin:0 0 14px;font-size:clamp(28px, 3vw, 42px);line-height:1.15;font-weight:800}
+.sub{margin:0 0 40px;font-size:17px;line-height:1.7;color:#AEB6C4;max-width:640px}
+.mod{display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid rgba(255,255,255,0.1);border-radius:14px;background:rgba(13,26,50,0.6)}
+.mod h4{margin:0 0 4px;font-size:16px;font-weight:800}.mod p{margin:0;font-size:14px;line-height:1.6;color:#AEB6C4}
+.phase{margin:0 0 14px;font-size:12px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:#D4AF37}
+.flow{display:grid;grid-template-columns:repeat(auto-fit, minmax(min(220px, 100%), 1fr));gap:14px;counter-reset:st}
+.fstep{position:relative;padding:22px;border:1px solid rgba(255,255,255,0.12);border-radius:14px;background:#0B1528}
+.fstep b{display:inline-flex;width:30px;height:30px;border-radius:999px;align-items:center;justify-content:center;background:#D4AF37;color:#0A0F18;font-size:13px;margin-bottom:12px}
+.fstep h4{margin:0 0 6px;font-size:16px;font-weight:800}.fstep p{margin:0;font-size:14px;line-height:1.6;color:#AEB6C4}
+.chipx{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:12px;border:1px solid rgba(212,175,55,0.4);background:#0B1528;font-size:14px;font-weight:700}
+.chipx span{font-weight:500;color:#9AA4B5}
+.cmp{width:100%;border-collapse:collapse;min-width:620px;font-size:15px}
+.cmp th,.cmp td{padding:14px 18px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.08)}
+.cmp th{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#9AA4B5}
+.cmp td:nth-child(2){color:#9AA4B5}.cmp td:nth-child(3){color:#FFFFFF;font-weight:700;background:rgba(212,175,55,0.06)}
+.cmp th:nth-child(3){color:#D4AF37;background:rgba(212,175,55,0.06)}
+.model{padding:28px;border:1px solid rgba(255,255,255,0.12);border-radius:18px;background:#0B1528}
+.model.best{border-color:#D4AF37;box-shadow:0 0 40px rgba(212,175,55,0.12)}
+.tag{display:inline-block;font-size:10px;font-weight:900;letter-spacing:2px;padding:6px 12px;border-radius:999px;border:1px solid #D4AF37;color:#D4AF37}
+.model ul{margin:16px 0 0;padding-left:20px;color:#C9D0DB;font-size:15px;line-height:1.9}
+.kit{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;margin-top:22px}
+.kit div{padding:14px 20px;border-radius:12px;border:1px solid rgba(212,175,55,0.45);background:#0B1528;font-weight:800;font-size:15px;text-align:center}
+.kit div span{display:block;font-size:12px;font-weight:500;color:#9AA4B5}
+.kit i{color:#D4AF37;font-style:normal;font-size:20px}
+.phhead{display:flex;align-items:center;gap:10px;width:100%;margin:0 0 14px;padding:0;background:none;border:0;color:inherit;font:inherit;text-align:left;cursor:default}
+.phcount,.phchev{display:none}
+.shead{display:flex;align-items:center;width:100%;padding:0;margin:0;background:none;border:0;color:inherit;font:inherit;text-align:left;cursor:default}
+@media (max-width: 760px){.kit{flex-direction:column}.kit i{transform:rotate(90deg)}
+.phgrp{border:1px solid rgba(255,255,255,0.12);border-radius:16px;padding:4px 16px;background:rgba(13,26,50,0.6)}
+.phhead{min-height:56px;margin:0;cursor:pointer}
+.phcount{display:inline;margin-left:auto;font-size:12px;color:#9AA4B5;font-weight:600}
+.phchev{display:inline-block;font-size:22px;line-height:1;color:#D4AF37;transition:transform 0.3s ease}
+.phbody{display:none !important;padding-bottom:14px}
+.phbody.is-open{display:grid !important}
+.phbody .mod{background:transparent;border-color:rgba(255,255,255,0.08)}
+.flow{display:flex !important;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:20px;scrollbar-width:none;margin:0 -20px;padding:0 20px 4px}
+.flow::-webkit-scrollbar{display:none}
+.fstep{flex:0 0 78%;scroll-snap-align:start}
+.cnav{display:flex !important}
+.smod{align-items:center}
+.shead{cursor:pointer;min-height:44px}
+.shead h4{flex:1;margin:0 !important}
+.sbody{display:none}
+.sbody.is-open{display:block;padding-top:4px}}
+.plathero{background-color:#070B12;background-image:linear-gradient(180deg, rgba(7,11,18,0.55) 0%, rgba(7,11,18,0.66) 55%, #070B12 100%), url(/_blob/05788629024ac8f2639a41259841f6a5);background-size:cover;background-position:center 55%}
+@media (max-width: 760px){.plathero{background-image:linear-gradient(180deg, rgba(7,11,18,0.58) 0%, rgba(7,11,18,0.7) 55%, #070B12 100%), url(/_blob/a611ae235178927aad536700cf2d47f9);background-position:center;padding-bottom:72px !important}}
+.integ{border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,0.12);box-shadow:0 20px 60px rgba(0,0,0,0.45)}
+@media (max-width: 760px){.integ{margin:0 -20px;border-radius:0;border-left:0;border-right:0;overflow-x:auto}.integ img{width:760px !important;max-width:none}.ihint{display:block !important}}
+.ihint{display:none;margin:12px 0 0;font-size:12px;font-weight:700;letter-spacing:1px;color:#9AA4B5;text-align:right}
+.gbg{background-image:linear-gradient(rgba(212,175,55,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(212,175,55,0.07) 1px, transparent 1px), linear-gradient(rgba(140,170,220,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(140,170,220,0.035) 1px, transparent 1px) !important;background-size:120px 120px, 120px 120px, 24px 24px, 24px 24px !important;background-position:center top !important}
+</style>
+</helmet>
+<div style="font-family:'Montserrat', 'Segoe UI', sans-serif; color:#FFFFFF; background:#070B12; width:100%">
+<section class="plathero" style="padding:0 0 110px">
+<header class="wrap" style="width:100%; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:20px; padding-top:26px; padding-bottom:26px">
+<a href="Main.dc.html"><img fetchpriority="high" width="320" height="55" src="/_blob/b6319d69e6a30b8740eaac2e7617242e" alt="WIRTIX" style="height:26px; width:auto"></a>
+<nav class="dnav" style="display:flex; flex-wrap:wrap; gap:34px; font-size:13px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase"><a href="#" style="color:{{accent}}; text-decoration:none">Platform</a><a href="Main.dc.html#solusi" style="color:#E5E9F0; text-decoration:none">Solutions</a><a href="Plan.dc.html" style="color:#E5E9F0; text-decoration:none">Plan Your Event</a><a href="Company.dc.html" style="color:#E5E9F0; text-decoration:none">Company</a></nav>
+<a href="https://wa.me/6287878781670?text=Halo%20WIRTIX%2C%20saya%20ingin%20menjadwalkan%20demo%20untuk%20acara%20saya." target="_blank" rel="noopener" class="btn dright" style="min-height:44px; padding:0 22px; background:{{accent}}; color:#0A0F18; font-size:12px">Jadwalkan Demo</a>
+<button type="button" class="burger" onClick="{{toggleMenu}}" aria-label="Menu" aria-expanded="{{menuAria}}"><span style="{{bar1}}"></span><span style="{{bar2}}"></span><span style="{{bar3}}"></span></button>
+</header>
+<sc-if value="{{menuOpen}}" hint-placeholder-val="{{ false }}"><div class="mmenu"><a href="#" onClick="{{closeMenu}}">Platform</a><a href="Main.dc.html#solusi" onClick="{{closeMenu}}">Solutions</a><a href="Plan.dc.html" onClick="{{closeMenu}}">Plan Your Event</a><a href="Company.dc.html" onClick="{{closeMenu}}">Company</a></div></sc-if>
+<div class="wrap" style="padding-top:64px; text-align:center">
+<p class="kicker">Platform</p>
+<h1 style="margin:0 auto 20px; font-size:clamp(36px, 4.4vw, 62px); line-height:1.07; font-weight:900; letter-spacing:-1px; max-width:900px">One Platform. Every Moment of Your Event.</h1>
+<p style="margin:0 auto; font-size:18px; line-height:1.7; color:#C9D0DB; max-width:640px">Sepuluh modul yang saling terhubung, dari penjualan tiket hingga laporan sponsor, dengan brand dan data tetap milik Anda.</p>
+</div>
+</section>
+<section class="gbg" style="padding:96px 0">
+<div class="wrap"><p class="kicker">The 10 Modules</p><h2 class="h2x">Everything Your Event Needs</h2><p class="sub">Aktifkan hanya modul yang Anda butuhkan. Semuanya berbagi data yang sama, real-time.</p>
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap:28px"><div class="phgrp"><button type="button" class="phhead" onClick="{{ph0}}" aria-expanded="{{phA0}}"><span class="phase" style="margin:0">Pre-Event</span><span class="phcount">4 modul</span><span class="phchev" aria-hidden="true" style="{{phV0}}">⌄</span></button><div class="phbody {{phC0}}" style="display:grid;gap:12px"><div class="mod"><div style="width:44px;height:44px;border-radius:12px;background:#12203A;border:1px solid rgba(212,175,55,0.35);display:flex;align-items:center;justify-content:center;flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path><path d="M13 5v2"></path><path d="M13 17v2"></path><path d="M13 11v2"></path></svg></div><div><h4>Ticketing</h4><p>Halaman tiket ber-brand dengan domain sendiri.</p></div></div><div class="mod"><div style="width:44px;height:44px;border-radius:12px;background:#12203A;border:1px solid rgba(212,175,55,0.35);display:flex;align-items:center;justify-content:center;flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18v-6a5 5 0 1 1 10 0v6"></path><path d="M5 19h14"></path></svg></div><div><h4>Seating Plan</h4><p>Pembeli memilih kursi langsung dari denah.</p></div></div><div class="mod"><div style="width:44px;height:44px;border-radius:12px;background:#12203A;border:1px solid rgba(212,175,55,0.35);display:flex;align-items:center;justify-content:center;flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></div><div><h4>Affiliate</h4><p>Komisi mitra tercatat otomatis.</p></div></div><div class="mod"><div style="width:44px;height:44px;border-radius:12px;background:#12203A;border:1px solid rgba(212,175,55,0.35);display:flex;align-items:center;justify-content:center;flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></div><div><h4>WhatsApp Bot</h4><p>E-tiket dan info acara dikirim via WhatsApp.</p></div></div></div></div><div class="phgrp"><button type="button" class="phhead" onClick="{{ph1}}" aria-expanded="{{phA1}}"><span class="phase" style="margin:0">Event Day</span><span class="phcount">4 modul</span><span class="phchev" aria-hidden="true" style="{{phV1}}">⌄</span></button><div class="phbody {{phC1}}" style="display:grid;gap:12px"><div class="mod"><div style="width:44px;height:44px;border-radius:12px;background:#12203A;border:1px solid rgba(212,175,55,0.35);display:flex;align-items:center;justify-content:center;flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5"></circle><path d="m21 2-9.6 9.6"></path><path d="m15.5 7.5 3 3L22 7l-3-3"></path></svg></div><div><h4>Gate Access</h4><p>Validasi cepat, tetap berjalan saat offline.</p></div></div><div class="mod"><div style="width:44px;height:44px;border-radius:12px;background:#12203A;border:1px solid rgba(212,175,55,0.35);display:flex;align-items:center;justify-content:center;flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></div><div><h4>POS &amp; Payments</h4><p>Kasir cashless dengan QRIS, EDC, dan kartu.</p></div></div><div class="mod"><div style="width:44px;height:44px;border-radius:12px;background:#12203A;border:1px solid rgba(212,175,55,0.35);display:flex;align-items:center;justify-content:center;flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg></div><div><h4>Commerce</h4><p>Penjualan merchandise dan add-on.</p></div></div><div class="mod"><div style="width:44px;height:44px;border-radius:12px;background:#12203A;border:1px solid rgba(212,175,55,0.35);display:flex;align-items:center;justify-content:center;flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg></div><div><h4>Facility</h4><p>Pengelolaan area dan fasilitas venue.</p></div></div></div></div><div class="phgrp"><button type="button" class="phhead" onClick="{{ph2}}" aria-expanded="{{phA2}}"><span class="phase" style="margin:0">Post-Event</span><span class="phcount">2 modul</span><span class="phchev" aria-hidden="true" style="{{phV2}}">⌄</span></button><div class="phbody {{phC2}}" style="display:grid;gap:12px"><div class="mod"><div style="width:44px;height:44px;border-radius:12px;background:#12203A;border:1px solid rgba(212,175,55,0.35);display:flex;align-items:center;justify-content:center;flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg></div><div><h4>Settlement</h4><p>Bagi hasil dihitung otomatis per transaksi.</p></div></div><div class="mod"><div style="width:44px;height:44px;border-radius:12px;background:#12203A;border:1px solid rgba(212,175,55,0.35);display:flex;align-items:center;justify-content:center;flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"></path><path d="M8 17V10"></path><path d="M13 17V6"></path><path d="M18 17v-4"></path></svg></div><div><h4>CRM &amp; Analytics</h4><p>Data audiens dan laporan untuk sponsor.</p></div></div></div></div></div></div>
+</section>
+<section class="gbg" style="padding:96px 0; background:#0B111C">
+<div class="wrap"><p class="kicker">Under the Hood</p><h2 class="h2x">How a Ticket Flows</h2><p class="sub">Arsitektur berbasis event, dirancang untuk tetap stabil saat permintaan memuncak.</p><div class="flow" onScroll="{{onFlow}}"><div class="fstep"><b>1</b><h4>Checkout</h4><p>Kursi dikunci sementara selama pembayaran.</p></div><div class="fstep"><b>2</b><h4>Payment Confirmed</h4><p>Konfirmasi otomatis dari payment gateway.</p></div><div class="fstep"><b>3</b><h4>Processed in Parallel</h4><p>E-tiket, notifikasi WhatsApp, dan sinkron CRM berjalan bersamaan.</p></div><div class="fstep"><b>4</b><h4>Stays Light Under Load</h4><p>Proses berat berjalan di antrean, sehingga sistem tetap ringan saat lonjakan pembeli.</p></div></div>
+<div class="cnav" aria-hidden="true"><div style="display:flex; gap:8px"><span style="{{fd0}}"></span><span style="{{fd1}}"></span><span style="{{fd2}}"></span><span style="{{fd3}}"></span></div><span style="font-size:12px; font-weight:700; letter-spacing:1px; color:#9AA4B5">Geser untuk melihat lainnya →</span></div></div>
+</section>
+<section class="gbg" style="padding:96px 0">
+<div class="wrap">
+<p class="kicker">Integrations</p><h2 class="h2x">Plug Into Anything</h2><p class="sub" style="margin-bottom:28px">WIRTIX terhubung dengan sistem yang sudah Anda gunakan melalui API terbuka, tanpa perlu mengganti apa pun untuk mulai.</p>
+<div class="integ"><img loading="lazy" decoding="async" width="1600" height="475" src="/_blob/370c819a102b4f642d3bc844eed7a11e" alt="Diagram integrasi WIRTIX: Payment Gateway (QRIS, VA, kartu), WhatsApp, Email, CRM, Accounting, dan Custom Systems terhubung melalui Storefront, Admin, dan Ops API" style="width:100%; height:auto; display:block"></div>
+<p class="ihint">Geser diagram untuk melihat semua →</p>
+<div style="margin-top:88px"><p class="kicker">Security</p><h2 class="h2x">Your Data, Protected</h2><p class="sub" style="margin-bottom:28px">Keamanan dibangun di setiap lapisan sistem.</p>
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap:12px"><div class="mod smod"><div style="width:44px;height:44px;border-radius:12px;background:#12203A;border:1px solid rgba(212,175,55,0.35);display:flex;align-items:center;justify-content:center;flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div><div style="flex:1;min-width:0"><button type="button" class="shead" onClick="{{sc0}}" aria-expanded="{{scA0}}"><h4>Encryption</h4><span class="phchev schev" aria-hidden="true" style="{{scV0}}">⌄</span></button><div class="sbody {{scC0}}"><p>Data pembeli dan transaksi dienkripsi saat disimpan maupun dikirim.</p></div></div></div><div class="mod smod"><div style="width:44px;height:44px;border-radius:12px;background:#12203A;border:1px solid rgba(212,175,55,0.35);display:flex;align-items:center;justify-content:center;flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg></div><div style="flex:1;min-width:0"><button type="button" class="shead" onClick="{{sc1}}" aria-expanded="{{scA1}}"><h4>Role-Based Access</h4><span class="phchev schev" aria-hidden="true" style="{{scV1}}">⌄</span></button><div class="sbody {{scC1}}"><p>Admin, petugas gerbang, dan kasir hanya mengakses sesuai perannya.</p></div></div></div><div class="mod smod"><div style="width:44px;height:44px;border-radius:12px;background:#12203A;border:1px solid rgba(212,175,55,0.35);display:flex;align-items:center;justify-content:center;flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div><div style="flex:1;min-width:0"><button type="button" class="shead" onClick="{{sc2}}" aria-expanded="{{scA2}}"><h4>Audit Trail</h4><span class="phchev schev" aria-hidden="true" style="{{scV2}}">⌄</span></button><div class="sbody {{scC2}}"><p>Setiap login, akses data, dan perubahan pengaturan tercatat.</p></div></div></div><div class="mod smod"><div style="width:44px;height:44px;border-radius:12px;background:#12203A;border:1px solid rgba(212,175,55,0.35);display:flex;align-items:center;justify-content:center;flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg></div><div style="flex:1;min-width:0"><button type="button" class="shead" onClick="{{sc3}}" aria-expanded="{{scA3}}"><h4>UU PDP Alignment</h4><span class="phchev schev" aria-hidden="true" style="{{scV3}}">⌄</span></button><div class="sbody {{scC3}}"><p>Pengelolaan data pribadi mengikuti prinsip UU Pelindungan Data Pribadi.</p></div></div></div></div></div>
+</div>
+</section>
+<section class="gbg" style="padding:96px 0; background:#0B111C">
+<div class="wrap" style="text-align:center"><p class="kicker">On-Site Kit</p><h2 class="h2x">Everything We Bring to Your Venue</h2><p class="sub" style="margin-left:auto; margin-right:auto">Perangkat yang menjaga operasional <span style="white-space:nowrap">hari-H</span> tetap berjalan, dengan atau tanpa internet. Seluruh perangkat disiapkan dan diuji tim kami sebelum <span style="white-space:nowrap">hari-H</span>.</p>
+<div class="kit"><div>Gate Scanner<span>e-tiket digital &amp; fisik</span></div><i>→</i><div>Edge Server<span>validasi offline di lokasi</span></div><i>→</i><div>WIRTIX Cloud<span>data &amp; laporan</span></div></div>
+<div class="kit" style="margin-top:12px"><div>Android EDC / POS<span>kasir F&amp;B &amp; merchandise · QRIS &amp; kartu</span></div></div></div>
+</section>
+<section class="gbg" style="padding:96px 0">
+<div class="wrap"><p class="kicker">Why WIRTIX</p><h2 class="h2x">How We Compare</h2><p class="sub">Dibandingkan platform tiket pada umumnya.</p>
+<div style="overflow-x:auto; border:1px solid rgba(255,255,255,0.1); border-radius:16px; background:#0B1528"><table class="cmp"><thead><tr><th>Criteria</th><th>Typical Platform</th><th>WIRTIX</th></tr></thead><tbody><tr><td style="font-weight:700">Audience Data</td><td>✕ Milik platform</td><td>✓ 100% milik Anda</td></tr><tr><td style="font-weight:700">Branding</td><td>✕ Logo vendor</td><td>✓ Domain &amp; logo Anda</td></tr><tr><td style="font-weight:700">Integration</td><td>✕ Sistem tertutup</td><td>✓ API terbuka</td></tr><tr><td style="font-weight:700">Offline Gate</td><td>✕ Berhenti saat sinyal hilang</td><td>✓ Tetap berjalan</td></tr><tr><td style="font-weight:700">Event-Day Tools</td><td>✕ Butuh vendor lain</td><td>✓ POS &amp; akses terintegrasi</td></tr><tr><td style="font-weight:700">Settlement</td><td>✕ Pencairan dana tertunda</td><td>✓ Auto-split real-time</td></tr><tr><td style="font-weight:700">Pricing Model</td><td>✕ Satu skema</td><td>✓ Tiga skema fleksibel</td></tr></tbody></table></div></div>
+</section>
+<section class="gbg" style="padding:96px 0; background:#0B111C">
+<div class="wrap"><p class="kicker">Partnership</p><h2 class="h2x">Flexible Business Models</h2><p class="sub">Pilih skema kemitraan yang sesuai dengan acara Anda. Detail biaya kami sesuaikan dengan skala acara.</p>
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap:18px"><div class="model"><span class="tag" style="">FREE EVENTS</span><h3 style="margin:16px 0 8px;font-size:22px;font-weight:800">Data Acquisition</h3><p style="margin:0;color:#AEB6C4;font-size:15px;line-height:1.7">Untuk acara gratis atau B2B, bayar hanya untuk pengunjung yang tervalidasi.</p><ul><li>Bayar per tamu tervalidasi</li><li>Validasi offline di lokasi</li><li>Database prospek milik Anda</li></ul><p style="margin:16px 0 0;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#D4AF37;font-weight:800">Best for</p><p style="margin:6px 0 0;font-size:14px;color:#C9D0DB">Expo gratis, RSVP, dan acara B2B</p></div><div class="model best"><span class="tag" style="background:#D4AF37;color:#0A0F18">BEST VALUE</span><h3 style="margin:16px 0 8px;font-size:22px;font-weight:800">Transaction-Based</h3><p style="margin:0;color:#AEB6C4;font-size:15px;line-height:1.7">Tanpa biaya awal, untuk acara bertiket berskala besar.</p><ul><li>Tanpa biaya setup di awal</li><li>Fee per tiket, bisa bertingkat</li><li>Dana terbagi otomatis</li></ul><p style="margin:16px 0 0;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#D4AF37;font-weight:800">Best for</p><p style="margin:6px 0 0;font-size:14px;color:#C9D0DB">Konser, festival, dan olahraga</p></div><div class="model"><span class="tag" style="">VENUE REVENUE</span><h3 style="margin:16px 0 8px;font-size:22px;font-weight:800">POS &amp; Merchant</h3><p style="margin:0;color:#AEB6C4;font-size:15px;line-height:1.7">Pendapatan di luar tiket dari F&amp;B dan merchandise.</p><ul><li>Kasir Android untuk tenant</li><li>Bagi hasil otomatis real-time</li><li>Stok tercatat per transaksi</li></ul><p style="margin:16px 0 0;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#D4AF37;font-weight:800">Best for</p><p style="margin:6px 0 0;font-size:14px;color:#C9D0DB">Venue dengan F&amp;B, tenant, dan merch</p></div></div>
+<p style="margin:44px 0 0; text-align:center; font-size:16px; color:#AEB6C4">Belum yakin skema mana yang tepat? <a href="Plan.dc.html" style="font-weight:800; text-decoration:none; white-space:nowrap">Coba Plan Your Event →</a></p></div>
+</section>
+<div class="fph" style="padding:28px 0; border-top:1px solid rgba(255,255,255,0.08); font-size:13px; color:#8A93A6; text-align:center">[Footer — lihat artboard Footer]</div>
+<a href="https://wa.me/6287878781670?text=Halo%20WIRTIX%2C%20saya%20ingin%20menjadwalkan%20demo%20untuk%20acara%20saya." target="_blank" rel="noopener" class="mcta" style="{{ctaStyle}}">Jadwalkan Demo</a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#D4AF37","options":["#D4AF37","#E0B94A","#C9A227"]},"$preview":{"width":1440,"height":5220}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { menuOpen: false, showCta: false, ben: 0, zoom: false, ph: 0, fl: 0, sc: 0 };
+  }
+  componentDidMount() {
+    this.onScroll = () => { const v = window.scrollY > 520; if (v !== this.state.showCta) this.setState({ showCta: v }); };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll);
+  }
+  renderVals() {
+    const accent = this.props.accent ?? '#D4AF37';
+    const mo = this.state.menuOpen;
+    const bar = (r) => 'display:block; width:18px; height:2px; border-radius:2px; background:#FFFFFF; transition:transform 0.25s ease, opacity 0.2s ease; ' + r;
+    const fdot = (i) => 'display:block; height:8px; border-radius:999px; transition:width 0.3s ease, background 0.3s ease; ' + (i === this.state.fl ? 'width:24px; background:' + accent + ';' : 'width:8px; background:rgba(255,255,255,0.25);');
+    return {
+      accent,
+      menuOpen: mo, menuAria: mo ? 'true' : 'false',
+      toggleMenu: () => this.setState({ menuOpen: !this.state.menuOpen }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      bar1: bar(mo ? 'transform:translateY(7px) rotate(45deg)' : ''), bar2: bar(mo ? 'opacity:0' : ''), bar3: bar(mo ? 'transform:translateY(-7px) rotate(-45deg)' : ''),
+      ...[0, 1, 2].reduce((o, i) => { const open = this.state.ben === i; o['bt' + i] = () => this.setState({ ben: this.state.ben === i ? -1 : i }); o['bA' + i] = open ? 'true' : 'false'; o['bC' + i] = open ? 'is-open' : ''; o['bV' + i] = open ? 'transform:rotate(180deg)' : ''; return o; }, {}),
+      ...[0, 1, 2].reduce((o, i) => { const open = this.state.ph === i; o['ph' + i] = () => this.setState({ ph: this.state.ph === i ? -1 : i }); o['phA' + i] = open ? 'true' : 'false'; o['phC' + i] = open ? 'is-open' : ''; o['phV' + i] = open ? 'transform:rotate(180deg)' : ''; return o; }, {}),
+      ...[0, 1, 2, 3].reduce((o, i) => { const open = this.state.sc === i; o['sc' + i] = () => this.setState({ sc: this.state.sc === i ? -1 : i }); o['scA' + i] = open ? 'true' : 'false'; o['scC' + i] = open ? 'is-open' : ''; o['scV' + i] = open ? 'transform:rotate(180deg)' : ''; return o; }, {}),
+      fd0: fdot(0), fd1: fdot(1), fd2: fdot(2), fd3: fdot(3),
+      onFlow: (e) => { const el = e.currentTarget || e.target; const f = el.firstElementChild; if (!f) return; const step = f.getBoundingClientRect().width + 14; const i = Math.max(0, Math.min(3, Math.round(el.scrollLeft / step))); if (i !== this.state.fl) this.setState({ fl: i }); },
+      zoomOn: this.state.zoom,
+      zoomOpen: () => this.setState({ zoom: true }),
+      zoomClose: () => this.setState({ zoom: false }),
+      ctaStyle: 'opacity:1; transform:translateY(0)'
+    };
+  }
+}
+</script>
+</body>
+</html>

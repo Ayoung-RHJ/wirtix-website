@@ -1,0 +1,19 @@
+{
+ "name": "WIRTIX",
+ "short_name": "WIRTIX",
+ "icons": [
+  {
+   "src": "/assets/brand/icon-180.png",
+   "sizes": "180x180",
+   "type": "image/png"
+  },
+  {
+   "src": "/assets/brand/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  }
+ ],
+ "theme_color": "#070B12",
+ "background_color": "#070B12",
+ "display": "standalone"
+}

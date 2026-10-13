@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>WIRTIX — Footer</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#070B12}
+a{color:#D4AF37}a:hover{color:#F2C94C}
+.wrap{max-width:1200px;margin:0 auto;padding:0 28px;box-sizing:border-box}
+.kicker{margin:0 0 18px;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#D4AF37}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;border-radius:8px;font-weight:800;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;box-sizing:border-box}
+.fcta{background-image:linear-gradient(180deg, #070B12 0%, rgba(7,11,18,0.72) 30%, rgba(7,11,18,0.78) 70%, #070B12 100%), url(/_blob/d180f50ab09748396f042c78953a4769);background-size:cover;background-position:center 62%}
+.fcol{display:flex;flex-direction:column;gap:12px;font-size:14px}
+.fcol a{color:#AEB6C4;text-decoration:none}.fcol a:hover{color:#FFFFFF}
+.soc{width:40px;height:40px;border-radius:10px;border:1px solid rgba(255,255,255,0.15);display:inline-flex;align-items:center;justify-content:center}
+.fcta-grid{display:grid;grid-template-columns:minmax(0, 1fr) auto;align-items:end;gap:48px}
+.fgrid{display:grid;grid-template-columns:minmax(0, 2fr) repeat(3, minmax(0, 1fr));gap:44px;margin-bottom:64px}
+@media (max-width: 900px){.fcta-grid{grid-template-columns:minmax(0, 1fr)}.fgrid{grid-template-columns:repeat(2, minmax(0, 1fr))}.fgrid > div:first-child{grid-column:1 / -1}}
+@media (max-width: 760px){
+.wrap{padding-left:20px;padding-right:20px}
+.fcta{padding:96px 0 72px !important}
+.fcta-grid{gap:28px}
+.fcta-grid > div:last-child{flex-direction:column}
+.fcta-grid > div:last-child .btn{width:100%}
+.fgrid{gap:32px 20px;margin-bottom:36px}
+.fgrid > .fcol{display:none}
+.fbot{flex-direction:column;align-items:center !important;justify-content:center !important;text-align:center;gap:14px !important;padding-bottom:88px}
+.fbot > span:last-child{order:-1}
+}
+</style>
+</helmet>
+<div style="font-family:'Montserrat', 'Segoe UI', sans-serif; color:#FFFFFF; background:#070B12; width:100%">
+<section id="demo" class="fcta" style="padding:150px 0 120px">
+<div class="wrap fcta-grid">
+<div style="min-width:0">
+<p class="kicker">Get Started</p>
+<h2 style="margin:0 0 18px; font-size:clamp(32px, 3.6vw, 52px); line-height:1.1; font-weight:900; letter-spacing:-0.5px">Take Full Control of Your Event Ecosystem</h2>
+<p style="margin:0; font-size:17px; line-height:1.7; color:#C9D0DB">Untuk kebutuhan standar, halaman tiket ber-brand Anda bisa siap jual dalam 48&nbsp;jam setelah informasi acara Anda lengkap kami terima.</p>
+</div>
+<div style="display:flex; flex-wrap:wrap; gap:14px">
+<a href="#" class="btn" style="background:{{accent}}; color:#0A0F18">Jadwalkan Demo</a>
+<a href="https://wa.me/6287878781670?text=Halo%20WIRTIX%2C%20saya%20ingin%20konsultasi%20untuk%20acara%20saya." target="_blank" rel="noopener" class="btn" style="border:1px solid rgba(255,255,255,0.35); color:#FFFFFF">Chat via WhatsApp</a>
+</div>
+</div>
+</section>
+<footer style="padding:0 0 36px">
+<div class="wrap">
+<div aria-hidden="true" style="height:1px; background:linear-gradient(90deg, rgba(212,175,55,0), rgba(212,175,55,0.5) 50%, rgba(212,175,55,0)); margin-bottom:64px"></div>
+<div class="fgrid">
+<div style="min-width:0">
+<img loading="lazy" decoding="async" width="520" height="89" src="/_blob/b6319d69e6a30b8740eaac2e7617242e" alt="WIRTIX" style="height:28px; width:auto; margin-bottom:20px">
+<p style="margin:0 0 24px; font-size:15px; line-height:1.7; color:#AEB6C4; max-width:380px">Teknologi andal di balik layar, untuk acara yang sepenuhnya milik Anda.</p>
+<div style="display:flex; flex-direction:column; gap:12px; font-size:14px; color:#C9D0DB">
+<span style="display:flex; gap:10px; align-items:flex-start"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg><span>Kemang Point, Lt. 3, Jl. Kemang Raya No. 12<br>Jakarta Selatan 12720</span></span>
+<span style="display:flex; gap:10px; align-items:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg><span>mau@usewirtix.com</span></span>
+<span style="display:flex; gap:10px; align-items:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><a href="tel:+622122716290" style="color:#C9D0DB; text-decoration:none">+62 21 2271 6290</a></span>
+</div>
+</div>
+<div class="fcol"><strong style="color:#FFFFFF; font-size:13px; letter-spacing:2px; text-transform:uppercase">Platform</strong><a href="#">Ticketing &amp; Seating</a><a href="#">Gate Access</a><a href="#">POS &amp; Payments</a><a href="#">CRM &amp; Analytics</a></div>
+<div class="fcol"><strong style="color:#FFFFFF; font-size:13px; letter-spacing:2px; text-transform:uppercase">Solutions</strong><a href="Solusi-Promotor.dc.html">Promotor &amp; EO</a><a href="Solusi-Venue.dc.html">Venue &amp; Hospitality</a><a href="Solusi-Corporate.dc.html">Corporate &amp; B2B</a><a href="Solusi-Education.dc.html">Education</a></div>
+<div class="fcol"><strong style="color:#FFFFFF; font-size:13px; letter-spacing:2px; text-transform:uppercase">Company</strong><a href="#">About</a><a href="#">Showcase</a><a href="#">Contact</a><a href="https://kontrol.usewirtix.com/login">Login</a></div>
+</div>
+<div class="fbot" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:16px; padding-top:28px; border-top:1px solid rgba(255,255,255,0.08); font-size:13px; color:#7E889A">
+<span>© 2026 PT Wahana Insan Raharja</span>
+<span style="display:flex; gap:20px"><a href="Legal-Privacy-ID.dc.html" style="color:#9AA4B5; text-decoration:none">Kebijakan Privasi</a><a href="Legal-Terms-ID.dc.html" style="color:#9AA4B5; text-decoration:none">Syarat &amp; Ketentuan</a></span>
+<span style="display:flex; gap:10px"><a href="https://www.linkedin.com/company/wirtix/" target="_blank" rel="noopener" class="soc" aria-label="LinkedIn WIRTIX"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9D0DB" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></span>
+</div>
+</div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#D4AF37","options":["#D4AF37","#E0B94A","#C9A227"]},"$preview":{"width":1440,"height":1020}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#D4AF37' };
+  }
+}
+</script>
+</body>
+</html>

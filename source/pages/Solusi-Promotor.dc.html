@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>WIRTIX — Solutions: Promotor & EO</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preload" as="image" href="/_blob/7a4dd50797b28faf9387c81179b8f096" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#070B12}
+a{color:#D4AF37}a:hover{color:#F2C94C}
+.wrap{max-width:1200px;margin:0 auto;padding:0 28px;box-sizing:border-box}
+.kicker{margin:0 0 18px;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#D4AF37}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;border-radius:8px;font-weight:800;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;box-sizing:border-box}
+.shero{background-image:linear-gradient(180deg, rgba(7,11,18,0.62) 0%, rgba(7,11,18,0.80) 60%, #070B12 100%), url(/_blob/7a4dd50797b28faf9387c81179b8f096);background-size:cover;background-position:center}
+.case{display:grid;grid-template-columns:minmax(0, 1fr) minmax(0, 1.15fr);border:1px solid rgba(255,255,255,0.1);border-radius:22px;overflow:hidden;background:#0B1528}
+.ending{background-image:radial-gradient(ellipse 50% 60% at 50% 40%, rgba(212,175,55,0.10), rgba(212,175,55,0) 70%)}
+@media (max-width: 900px){.case{grid-template-columns:minmax(0, 1fr)}.case > div:last-child{order:-1}}
+.burger{display:none;width:44px;height:44px;border-radius:10px;border:1px solid rgba(255,255,255,0.22);background:rgba(7,11,18,0.4);cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0}
+.mmenu{margin:0 16px;padding:8px 20px 12px;border:1px solid rgba(255,255,255,0.12);border-radius:16px;background:rgba(9,16,30,0.96);display:flex;flex-direction:column;position:relative;z-index:5}
+.mmenu a{display:block;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.08);color:#FFFFFF;text-decoration:none;font-size:18px;font-weight:800}
+.mmenu a:last-child{border-bottom:0}
+.mcta{display:none}
+.zoomable{display:block;padding:0;margin:0;border:0;background:none;cursor:zoom-in;color:inherit;font:inherit}
+.zhint{display:none}
+.lb{position:fixed;inset:0;z-index:100;background:#05080E;display:flex;flex-direction:column}
+.lb-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:calc(14px + env(safe-area-inset-top, 0px)) 16px 12px;color:#9AA4B5;font-size:13px;font-weight:600}
+.lb-x{width:44px;height:44px;border-radius:12px;border:1px solid rgba(255,255,255,0.25);background:#0E1A30;color:#FFFFFF;font-size:18px;cursor:pointer;flex:none}
+.lb-scroll{flex:1;overflow:auto;touch-action:pan-x pan-y pinch-zoom;display:flex;align-items:center;padding:16px}
+.lb-scroll img{display:block;flex:none;width:auto;max-width:min(100%, 1400px);height:auto;margin:auto}
+.bhead{display:block;width:100%;padding:0;margin:0;background:none;border:0;color:inherit;font:inherit;text-align:left;cursor:default}
+.bchev{display:none}
+.cnav{display:none;align-items:center;justify-content:space-between;margin-top:18px}
+@media (max-width: 900px){.dnav,.dright{display:none !important}.burger{display:flex}}
+@media (max-width: 760px){
+.wrap{padding-left:20px;padding-right:20px}
+.shero{min-height:0 !important}
+.shero > .wrap:last-child{padding-top:36px;padding-bottom:56px !important}
+.herocta .btn{width:100%}
+section{padding-top:72px !important;padding-bottom:72px !important}
+section.shero{padding:0 !important}
+.benrow{gap:12px !important}
+.bcard{border:1px solid rgba(255,255,255,0.12) !important;border-radius:16px;padding:6px 18px !important;background:rgba(13,26,50,0.6)}
+.bhead{display:flex;align-items:center;gap:14px;cursor:pointer;min-height:64px}
+.bhead > div{margin:0 !important;width:44px !important;height:44px !important;flex:none}
+.bhead h3{margin:0 !important;font-size:17px !important;flex:1}
+.bchev{display:inline-block;font-size:22px;line-height:1;color:#D4AF37;transition:transform 0.3s ease}
+.bbody{display:none;padding:0 0 16px 58px}
+.bbody.is-open{display:block}
+.fph{padding-bottom:96px !important}
+.zhint{display:inline-flex;position:absolute;right:10px;bottom:10px;padding:6px 10px;border-radius:999px;background:rgba(7,11,18,0.82);border:1px solid rgba(212,175,55,0.5);color:#F2D27A;font-size:11px;font-weight:700;letter-spacing:0.5px}
+.lb-scroll img{width:auto;max-width:none;min-width:100%}
+.mcta{display:flex;position:fixed;left:16px;right:16px;bottom:calc(14px + env(safe-area-inset-bottom, 0px));z-index:50;min-height:54px;align-items:center;justify-content:center;border-radius:12px;background:#D4AF37;color:#0A0F18;font-weight:800;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,0.5);transition:transform 0.3s ease, opacity 0.3s ease}
+}
+.hl{position:absolute;border:2px solid #F2D27A;border-radius:12px;box-shadow:0 0 0 4px rgba(212,175,55,0.18), 0 0 28px rgba(242,210,122,0.55);opacity:0;pointer-events:none;animation:hl 8s ease-in-out infinite}
+.ar{position:absolute;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:999px;background:#F2D27A;box-shadow:0 0 14px 4px rgba(242,210,122,0.8);opacity:0;pointer-events:none;animation:ar 8s ease-in-out infinite}
+.cap{grid-area:1 / 1;opacity:0;animation:hl 8s ease-in-out infinite;font-size:14px;line-height:1.5;color:#C9D0DB;text-align:center}
+@keyframes hl{0%{opacity:0}3%{opacity:1}22%{opacity:1}25%{opacity:0}100%{opacity:0}}
+@keyframes ar{0%{opacity:0;transform:translateY(-14px)}2%{opacity:1}6%{opacity:1;transform:translateY(14px)}8%{opacity:0;transform:translateY(14px)}100%{opacity:0}}
+@media (prefers-reduced-motion: reduce){.hl,.ar,.cap{animation:none}.hl,.cap{opacity:0}.cap:first-child{opacity:1}}
+</style>
+</helmet>
+<div style="font-family:'Montserrat', 'Segoe UI', sans-serif; color:#FFFFFF; background:#070B12; width:100%">
+
+<section class="shero" style="min-height:640px; display:flex; flex-direction:column">
+<header class="wrap" style="width:100%; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:20px; padding-top:26px; padding-bottom:26px">
+<a href="Main.dc.html"><img fetchpriority="high" width="320" height="55" src="/_blob/b6319d69e6a30b8740eaac2e7617242e" alt="WIRTIX" style="height:26px; width:auto"></a>
+<nav class="dnav" style="display:flex; flex-wrap:wrap; gap:34px; font-size:13px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase"><a href="Main.dc.html#platform" style="color:#E5E9F0; text-decoration:none">Platform</a><a href="Main.dc.html#solusi" style="color:{{accent}}; text-decoration:none">Solutions</a><a href="#" style="color:#E5E9F0; text-decoration:none">Showcase</a><a href="#" style="color:#E5E9F0; text-decoration:none">About</a></nav>
+<a href="#demo" class="btn dright" style="min-height:44px; padding:0 22px; background:{{accent}}; color:#0A0F18; font-size:12px">Jadwalkan Demo</a>
+<button type="button" class="burger" onClick="{{toggleMenu}}" aria-label="Menu" aria-expanded="{{menuAria}}"><span style="{{bar1}}"></span><span style="{{bar2}}"></span><span style="{{bar3}}"></span></button>
+</header>
+<sc-if value="{{menuOpen}}" hint-placeholder-val="{{ false }}">
+<div class="mmenu"><a href="Main.dc.html#platform" onClick="{{closeMenu}}">Platform</a><a href="Main.dc.html#solusi" onClick="{{closeMenu}}">Solutions</a><a href="#" onClick="{{closeMenu}}">Showcase</a><a href="#" onClick="{{closeMenu}}">About</a></div>
+</sc-if>
+<div class="wrap" style="flex:1; display:flex; flex-direction:column; justify-content:center; padding-bottom:80px">
+<p class="kicker">Solutions · Promotor & EO</p>
+<h1 style="margin:0 0 22px; font-size:clamp(36px, 4.2vw, 60px); line-height:1.07; font-weight:900; letter-spacing:-1px; max-width:860px">Your Tickets. Your Stage. Not a Vendor’s Logo.</h1>
+<p style="margin:0 0 34px; font-size:19px; line-height:1.6; color:#C9D0DB; max-width:620px">Untuk konser, festival, pameran, dan olahraga — jual tiket di halaman Anda sendiri, dengan data pembeli yang tetap milik Anda.</p>
+</div>
+</section>
+
+<section style="padding:110px 0">
+<div class="wrap">
+<p class="kicker">Why It Works</p>
+<h2 style="margin:0 0 48px; font-size:clamp(28px, 3vw, 42px); line-height:1.15; font-weight:800">Built for High-Demand Ticketed Events</h2>
+<div class="benrow" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap:48px"><div class="bcard" style="border-top:1px solid rgba(255,255,255,0.15); padding-top:24px"><button type="button" class="bhead" onClick="{{bt0}}" aria-expanded="{{bA0}}"><div style="width:52px; height:52px; border-radius:14px; background:#12203A; border:1px solid rgba(212,175,55,0.35); display:flex; align-items:center; justify-content:center; margin-bottom:18px"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></div><h3 style="margin:0 0 10px; font-size:22px; font-weight:800">Built for Ticket Wars</h3><span class="bchev" aria-hidden="true" style="{{bV0}}">⌄</span></button><div class="bbody {{bC0}}"><p style="margin:0; font-size:16px; line-height:1.7; color:#AEB6C4">Dirancang untuk lonjakan pembeli: kursi dikunci sementara saat checkout dan proses berat berjalan di antrean, agar penjualan tetap stabil saat permintaan memuncak.</p></div></div><div class="bcard" style="border-top:1px solid rgba(255,255,255,0.15); padding-top:24px"><button type="button" class="bhead" onClick="{{bt1}}" aria-expanded="{{bA1}}"><div style="width:52px; height:52px; border-radius:14px; background:#12203A; border:1px solid rgba(212,175,55,0.35); display:flex; align-items:center; justify-content:center; margin-bottom:18px"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div><h3 style="margin:0 0 10px; font-size:22px; font-weight:800">Your Audience, Your Asset</h3><span class="bchev" aria-hidden="true" style="{{bV1}}">⌄</span></button><div class="bbody {{bC1}}"><p style="margin:0; font-size:16px; line-height:1.7; color:#AEB6C4">Database pembeli siap diekspor untuk promosi acara berikutnya — bukan tertahan di platform lain.</p></div></div><div class="bcard" style="border-top:1px solid rgba(255,255,255,0.15); padding-top:24px"><button type="button" class="bhead" onClick="{{bt2}}" aria-expanded="{{bA2}}"><div style="width:52px; height:52px; border-radius:14px; background:#12203A; border:1px solid rgba(212,175,55,0.35); display:flex; align-items:center; justify-content:center; margin-bottom:18px"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="{{accent}}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg></div><h3 style="margin:0 0 10px; font-size:22px; font-weight:800">Clear Settlement from Day One</h3><span class="bchev" aria-hidden="true" style="{{bV2}}">⌄</span></button><div class="bbody {{bC2}}"><p style="margin:0; font-size:16px; line-height:1.7; color:#AEB6C4">Pembagian dana dihitung otomatis per transaksi dan terpantau real-time. Dengan skema transaction-based, tanpa biaya setup di awal.</p></div></div></div>
+</div>
+</section>
+
+<section style="padding:0 0 110px">
+<div class="wrap">
+<div class="case">
+<div style="padding:clamp(28px, 4vw, 52px); display:flex; flex-direction:column; gap:20px">
+<div style="display:flex; flex-wrap:wrap; align-items:center; gap:12px"><p class="kicker" style="margin:0">Showcase · Motorsport Event</p><span style="font-size:10px; font-weight:900; letter-spacing:2px; padding:5px 10px; border-radius:999px; border:1px solid {{accent}}; background:{{accent}}; color:#0A0F18">DEPLOYED</span></div>
+<div><h3 style="margin:0 0 8px; font-size:clamp(24px, 2.4vw, 32px); line-height:1.2; font-weight:800">White-Label Ticket Marketplace</h3><p style="margin:0; font-size:15px; font-weight:700; color:{{accent}}">Your site sells, WIRTIX powers everything behind it</p></div>
+<div><p style="margin:0 0 6px; font-size:11px; font-weight:800; letter-spacing:2px; color:#7E889A; text-transform:uppercase">Challenge</p><p style="margin:0; font-size:15px; line-height:1.7; color:#C9D0DB">Promotor ingin menjual tiket langsung di situsnya sendiri, tanpa membangun sistem tiket dan pembayaran dari nol.</p></div><div><p style="margin:0 0 6px; font-size:11px; font-weight:800; letter-spacing:2px; color:#7E889A; text-transform:uppercase">Solution</p><p style="margin:0; font-size:15px; line-height:1.7; color:#C9D0DB">WIRTIX menjadi backend tiket dan payment gateway melalui API, sementara pembeli memilih kategori dan membayar di situs ber-brand promotor.</p></div><div><p style="margin:0 0 6px; font-size:11px; font-weight:800; letter-spacing:2px; color:#7E889A; text-transform:uppercase">Result</p><p style="margin:0; font-size:15px; line-height:1.7; color:#C9D0DB">Brand dan data pembeli tetap milik promotor, dengan e-tiket dan laporan penjualan yang berjalan otomatis.</p></div>
+</div>
+<div style="background:#0A182F; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:24px"><button type="button" class="zoomable" onClick="{{zoomOpen}}" style="position:relative; width:100%"><img loading="lazy" decoding="async" width="1419" height="879" src="/_blob/0160d52d46b8e15a307549fd9f70904f" alt="Ilustrasi situs promotor dan alur WIRTIX API" style="width:100%; height:auto; display:block"><span class="zhint" aria-hidden="true">⤢ Ketuk untuk perbesar</span></button></div>
+</div>
+</div>
+</section>
+
+<section class="ending" style="padding:20px 0 100px">
+<div class="wrap" style="text-align:center">
+<p class="kicker" style="color:#7E889A">Other Solutions</p>
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap:14px; max-width:900px; margin:0 auto"><a href="Solusi-Venue.dc.html" style="display:flex; justify-content:space-between; align-items:center; gap:12px; padding:20px 24px; border:1px solid rgba(255,255,255,0.12); border-radius:14px; text-decoration:none; color:#FFFFFF; font-weight:800">Venue & Hospitality<span style="color:{{accent}}">→</span></a><a href="Solusi-Corporate.dc.html" style="display:flex; justify-content:space-between; align-items:center; gap:12px; padding:20px 24px; border:1px solid rgba(255,255,255,0.12); border-radius:14px; text-decoration:none; color:#FFFFFF; font-weight:800">Corporate & B2B<span style="color:{{accent}}">→</span></a><a href="Solusi-Education.dc.html" style="display:flex; justify-content:space-between; align-items:center; gap:12px; padding:20px 24px; border:1px solid rgba(255,255,255,0.12); border-radius:14px; text-decoration:none; color:#FFFFFF; font-weight:800">Education<span style="color:{{accent}}">→</span></a></div>
+</div>
+</section>
+
+<div class="fph" style="padding:28px 0; border-top:1px solid rgba(255,255,255,0.08); font-size:13px; color:#8A93A6; text-align:center">[Footer — lihat artboard Footer]</div>
+<sc-if value="{{zoomOn}}" hint-placeholder-val="{{ false }}">
+<div class="lb" role="dialog" aria-modal="true" aria-label="Ilustrasi situs promotor dan alur WIRTIX API">
+<div class="lb-top"><span>Cubit atau geser untuk melihat detail</span><button type="button" class="lb-x" onClick="{{zoomClose}}" aria-label="Tutup">✕</button></div>
+<div class="lb-scroll"><img loading="lazy" decoding="async" width="1419" height="879" src="/_blob/0160d52d46b8e15a307549fd9f70904f" alt="Ilustrasi situs promotor dan alur WIRTIX API"></div>
+</div>
+</sc-if>
+<a href="#demo" class="mcta" style="{{ctaStyle}}">Jadwalkan Demo</a>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#D4AF37","options":["#D4AF37","#E0B94A","#C9A227"]},"$preview":{"width":1440,"height":2260}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { menuOpen: false, showCta: false, ben: 0, zoom: false };
+  }
+  componentDidMount() {
+    this.onScroll = () => { const v = window.scrollY > 520; if (v !== this.state.showCta) this.setState({ showCta: v }); };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll);
+  }
+  renderVals() {
+    const accent = this.props.accent ?? '#D4AF37';
+    const mo = this.state.menuOpen;
+    const bar = (r) => 'display:block; width:18px; height:2px; border-radius:2px; background:#FFFFFF; transition:transform 0.25s ease, opacity 0.2s ease; ' + r;
+    return {
+      accent,
+      menuOpen: mo, menuAria: mo ? 'true' : 'false',
+      toggleMenu: () => this.setState({ menuOpen: !this.state.menuOpen }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      bar1: bar(mo ? 'transform:translateY(7px) rotate(45deg)' : ''), bar2: bar(mo ? 'opacity:0' : ''), bar3: bar(mo ? 'transform:translateY(-7px) rotate(-45deg)' : ''),
+      ...[0, 1, 2].reduce((o, i) => { const open = this.state.ben === i; o['bt' + i] = () => this.setState({ ben: this.state.ben === i ? -1 : i }); o['bA' + i] = open ? 'true' : 'false'; o['bC' + i] = open ? 'is-open' : ''; o['bV' + i] = open ? 'transform:rotate(180deg)' : ''; return o; }, {}),
+      zoomOn: this.state.zoom,
+      zoomOpen: () => this.setState({ zoom: true }),
+      zoomClose: () => this.setState({ zoom: false }),
+      ctaStyle: 'opacity:1; transform:translateY(0)'
+    };
+  }
+}
+</script>
+</body>
+</html>

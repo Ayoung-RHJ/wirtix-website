@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>WIRTIX — Plan Your Event</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preload" as="image" href="/_blob/05788629024ac8f2639a41259841f6a5" media="(min-width: 761px)" fetchpriority="high">
+<link rel="preload" as="image" href="/_blob/a611ae235178927aad536700cf2d47f9" media="(max-width: 760px)" fetchpriority="high">
+<link rel="preload" as="image" href="/_blob/a10151f2e1291ce6adefa2a45a8da3bb" media="(min-width: 761px)" fetchpriority="high">
+<link rel="preload" as="image" href="/_blob/47c50da77c68f620b964f48177244986" media="(max-width: 760px)" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#070B12}
+a{color:#D4AF37}a:hover{color:#F2C94C}
+.wrap{max-width:1200px;margin:0 auto;padding:0 28px;box-sizing:border-box}
+.kicker{margin:0 0 18px;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#D4AF37}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;border-radius:8px;font-weight:800;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;box-sizing:border-box}
+.shero{background-image:linear-gradient(180deg, rgba(7,11,18,0.62) 0%, rgba(7,11,18,0.80) 60%, #070B12 100%), url(/_blob/7a4dd50797b28faf9387c81179b8f096);background-size:cover;background-position:center}
+.case{display:grid;grid-template-columns:minmax(0, 1fr) minmax(0, 1.15fr);border:1px solid rgba(255,255,255,0.1);border-radius:22px;overflow:hidden;background:#0B1528}
+.ending{background-image:radial-gradient(ellipse 50% 60% at 50% 40%, rgba(212,175,55,0.10), rgba(212,175,55,0) 70%)}
+@media (max-width: 900px){.case{grid-template-columns:minmax(0, 1fr)}.case > div:last-child{order:-1}}
+.burger{display:none;width:44px;height:44px;border-radius:10px;border:1px solid rgba(255,255,255,0.22);background:rgba(7,11,18,0.4);cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0}
+.mmenu{margin:0 16px;padding:8px 20px 12px;border:1px solid rgba(255,255,255,0.12);border-radius:16px;background:rgba(9,16,30,0.96);display:flex;flex-direction:column;position:relative;z-index:5}
+.mmenu a{display:block;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.08);color:#FFFFFF;text-decoration:none;font-size:18px;font-weight:800}
+.mmenu a:last-child{border-bottom:0}
+.mcta{display:none}
+.zoomable{display:block;padding:0;margin:0;border:0;background:none;cursor:zoom-in;color:inherit;font:inherit}
+.zhint{display:none}
+.lb{position:fixed;inset:0;z-index:100;background:#05080E;display:flex;flex-direction:column}
+.lb-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:calc(14px + env(safe-area-inset-top, 0px)) 16px 12px;color:#9AA4B5;font-size:13px;font-weight:600}
+.lb-x{width:44px;height:44px;border-radius:12px;border:1px solid rgba(255,255,255,0.25);background:#0E1A30;color:#FFFFFF;font-size:18px;cursor:pointer;flex:none}
+.lb-scroll{flex:1;overflow:auto;touch-action:pan-x pan-y pinch-zoom;display:flex;align-items:center;padding:16px}
+.lb-scroll img{display:block;flex:none;width:auto;max-width:min(100%, 1400px);height:auto;margin:auto}
+.bhead{display:block;width:100%;padding:0;margin:0;background:none;border:0;color:inherit;font:inherit;text-align:left;cursor:default}
+.bchev{display:none}
+.cnav{display:none;align-items:center;justify-content:space-between;margin-top:18px}
+@media (max-width: 900px){.dnav,.dright{display:none !important}.burger{display:flex}}
+@media (max-width: 760px){
+.wrap{padding-left:20px;padding-right:20px}
+.shero{min-height:0 !important}
+.shero > .wrap:last-child{padding-top:36px;padding-bottom:56px !important}
+.herocta .btn{width:100%}
+section{padding-top:72px !important;padding-bottom:72px !important}
+section.shero{padding:0 !important}
+.benrow{gap:12px !important}
+.bcard{border:1px solid rgba(255,255,255,0.12) !important;border-radius:16px;padding:6px 18px !important;background:rgba(13,26,50,0.6)}
+.bhead{display:flex;align-items:center;gap:14px;cursor:pointer;min-height:64px}
+.bhead > div{margin:0 !important;width:44px !important;height:44px !important;flex:none}
+.bhead h3{margin:0 !important;font-size:17px !important;flex:1}
+.bchev{display:inline-block;font-size:22px;line-height:1;color:#D4AF37;transition:transform 0.3s ease}
+.bbody{display:none;padding:0 0 16px 58px}
+.bbody.is-open{display:block}
+.fph{padding-bottom:96px !important}
+.zhint{display:inline-flex;position:absolute;right:10px;bottom:10px;padding:6px 10px;border-radius:999px;background:rgba(7,11,18,0.82);border:1px solid rgba(212,175,55,0.5);color:#F2D27A;font-size:11px;font-weight:700;letter-spacing:0.5px}
+.lb-scroll img{width:auto;max-width:none;min-width:100%}
+.mcta{display:flex;position:fixed;left:16px;right:16px;bottom:calc(14px + env(safe-area-inset-bottom, 0px));z-index:50;min-height:54px;align-items:center;justify-content:center;border-radius:12px;background:#D4AF37;color:#0A0F18;font-weight:800;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,0.5);transition:transform 0.3s ease, opacity 0.3s ease}
+}
+.hl{position:absolute;border:2px solid #F2D27A;border-radius:12px;box-shadow:0 0 0 4px rgba(212,175,55,0.18), 0 0 28px rgba(242,210,122,0.55);opacity:0;pointer-events:none;animation:hl 8s ease-in-out infinite}
+.ar{position:absolute;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:999px;background:#F2D27A;box-shadow:0 0 14px 4px rgba(242,210,122,0.8);opacity:0;pointer-events:none;animation:ar 8s ease-in-out infinite}
+.cap{grid-area:1 / 1;opacity:0;animation:hl 8s ease-in-out infinite;font-size:14px;line-height:1.5;color:#C9D0DB;text-align:center}
+@keyframes hl{0%{opacity:0}3%{opacity:1}22%{opacity:1}25%{opacity:0}100%{opacity:0}}
+@keyframes ar{0%{opacity:0;transform:translateY(-14px)}2%{opacity:1}6%{opacity:1;transform:translateY(14px)}8%{opacity:0;transform:translateY(14px)}100%{opacity:0}}
+@media (prefers-reduced-motion: reduce){.hl,.ar,.cap{animation:none}.hl,.cap{opacity:0}.cap:first-child{opacity:1}}
+.pgrid{background-color:#0C1C37;background-image:radial-gradient(ellipse 75% 70% at 50% 45%, rgba(12,28,55,0) 35%, #0C1C37 100%), linear-gradient(rgba(212,175,55,0.11) 1px, transparent 1px), linear-gradient(90deg, rgba(212,175,55,0.11) 1px, transparent 1px), linear-gradient(rgba(140,170,220,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(140,170,220,0.05) 1px, transparent 1px);background-size:100% 100%, 120px 120px, 120px 120px, 24px 24px, 24px 24px;background-position:center}
+.h2x{margin:0 0 14px;font-size:clamp(28px, 3vw, 42px);line-height:1.15;font-weight:800}
+.sub{margin:0 0 40px;font-size:17px;line-height:1.7;color:#AEB6C4;max-width:640px}
+.mod{display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid rgba(255,255,255,0.1);border-radius:14px;background:rgba(13,26,50,0.6)}
+.mod h4{margin:0 0 4px;font-size:16px;font-weight:800}.mod p{margin:0;font-size:14px;line-height:1.6;color:#AEB6C4}
+.phase{margin:0 0 14px;font-size:12px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:#D4AF37}
+.flow{display:grid;grid-template-columns:repeat(auto-fit, minmax(min(220px, 100%), 1fr));gap:14px;counter-reset:st}
+.fstep{position:relative;padding:22px;border:1px solid rgba(255,255,255,0.12);border-radius:14px;background:#0B1528}
+.fstep b{display:inline-flex;width:30px;height:30px;border-radius:999px;align-items:center;justify-content:center;background:#D4AF37;color:#0A0F18;font-size:13px;margin-bottom:12px}
+.fstep h4{margin:0 0 6px;font-size:16px;font-weight:800}.fstep p{margin:0;font-size:14px;line-height:1.6;color:#AEB6C4}
+.chipx{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:12px;border:1px solid rgba(212,175,55,0.4);background:#0B1528;font-size:14px;font-weight:700}
+.chipx span{font-weight:500;color:#9AA4B5}
+.cmp{width:100%;border-collapse:collapse;min-width:620px;font-size:15px}
+.cmp th,.cmp td{padding:14px 18px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.08)}
+.cmp th{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#9AA4B5}
+.cmp td:nth-child(2){color:#9AA4B5}.cmp td:nth-child(3){color:#FFFFFF;font-weight:700;background:rgba(212,175,55,0.06)}
+.cmp th:nth-child(3){color:#D4AF37;background:rgba(212,175,55,0.06)}
+.model{padding:28px;border:1px solid rgba(255,255,255,0.12);border-radius:18px;background:#0B1528}
+.model.best{border-color:#D4AF37;box-shadow:0 0 40px rgba(212,175,55,0.12)}
+.tag{display:inline-block;font-size:10px;font-weight:900;letter-spacing:2px;padding:6px 12px;border-radius:999px;border:1px solid #D4AF37;color:#D4AF37}
+.model ul{margin:16px 0 0;padding-left:20px;color:#C9D0DB;font-size:15px;line-height:1.9}
+.kit{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;margin-top:22px}
+.kit div{padding:14px 20px;border-radius:12px;border:1px solid rgba(212,175,55,0.45);background:#0B1528;font-weight:800;font-size:15px;text-align:center}
+.kit div span{display:block;font-size:12px;font-weight:500;color:#9AA4B5}
+.kit i{color:#D4AF37;font-style:normal;font-size:20px}
+.phhead{display:flex;align-items:center;gap:10px;width:100%;margin:0 0 14px;padding:0;background:none;border:0;color:inherit;font:inherit;text-align:left;cursor:default}
+.phcount,.phchev{display:none}
+.shead{display:flex;align-items:center;width:100%;padding:0;margin:0;background:none;border:0;color:inherit;font:inherit;text-align:left;cursor:default}
+@media (max-width: 760px){.kit{flex-direction:column}.kit i{transform:rotate(90deg)}
+.phgrp{border:1px solid rgba(255,255,255,0.12);border-radius:16px;padding:4px 16px;background:rgba(13,26,50,0.6)}
+.phhead{min-height:56px;margin:0;cursor:pointer}
+.phcount{display:inline;margin-left:auto;font-size:12px;color:#9AA4B5;font-weight:600}
+.phchev{display:inline-block;font-size:22px;line-height:1;color:#D4AF37;transition:transform 0.3s ease}
+.phbody{display:none !important;padding-bottom:14px}
+.phbody.is-open{display:grid !important}
+.phbody .mod{background:transparent;border-color:rgba(255,255,255,0.08)}
+.flow{display:flex !important;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:20px;scrollbar-width:none;margin:0 -20px;padding:0 20px 4px}
+.flow::-webkit-scrollbar{display:none}
+.fstep{flex:0 0 78%;scroll-snap-align:start}
+.cnav{display:flex !important}
+.smod{align-items:center}
+.shead{cursor:pointer;min-height:44px}
+.shead h4{flex:1;margin:0 !important}
+.sbody{display:none}
+.sbody.is-open{display:block;padding-top:4px}}
+.plathero{background-color:#070B12;background-image:linear-gradient(180deg, rgba(7,11,18,0.55) 0%, rgba(7,11,18,0.66) 55%, #070B12 100%), url(/_blob/05788629024ac8f2639a41259841f6a5);background-size:cover;background-position:center 55%}
+@media (max-width: 760px){.plathero{background-image:linear-gradient(180deg, rgba(7,11,18,0.58) 0%, rgba(7,11,18,0.7) 55%, #070B12 100%), url(/_blob/a611ae235178927aad536700cf2d47f9);background-position:center;padding-bottom:72px !important}}
+.integ{border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,0.12);box-shadow:0 20px 60px rgba(0,0,0,0.45)}
+@media (max-width: 760px){.integ{margin:0 -20px;border-radius:0;border-left:0;border-right:0;overflow-x:auto}.integ img{width:760px !important;max-width:none}.ihint{display:block !important}}
+.ihint{display:none;margin:12px 0 0;font-size:12px;font-weight:700;letter-spacing:1px;color:#9AA4B5;text-align:right}
+.gbg{background-image:linear-gradient(rgba(212,175,55,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(212,175,55,0.07) 1px, transparent 1px), linear-gradient(rgba(140,170,220,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(140,170,220,0.035) 1px, transparent 1px) !important;background-size:120px 120px, 120px 120px, 24px 24px, 24px 24px !important;background-position:center top !important}
+.pbox{padding:24px;border:1px solid rgba(255,255,255,0.1);border-radius:18px;background:#0B1528}
+.pstep{display:flex;align-items:center;gap:12px;margin:0 0 16px}
+.pstep b{display:inline-flex;width:30px;height:30px;border-radius:999px;align-items:center;justify-content:center;background:#D4AF37;color:#0A0F18;font-size:13px;flex:none}
+.pstep h3{margin:0;font-size:17px;font-weight:800}
+.opt{min-height:44px;padding:0 16px;border-radius:999px;font-family:inherit;font-size:14px;font-weight:700;cursor:pointer}
+.big2{font-size:clamp(30px, 3vw, 40px);font-weight:900;color:#FFFFFF;line-height:1}
+input[type=range]{width:100%;accent-color:#D4AF37;height:32px}
+.sim{position:relative;padding:18px;border-radius:16px;background:#070D18;border:1px solid rgba(255,255,255,0.08);overflow:hidden}
+.lane{position:relative;height:16px;margin:6px 0;border-radius:999px;background:rgba(255,255,255,0.04);overflow:hidden}
+.lane i{position:absolute;top:4px;left:-10px;width:8px;height:8px;border-radius:999px;background:#F2D27A;box-shadow:0 0 8px rgba(242,210,122,0.7);animation:walk 2.4s linear infinite}
+.lane i:nth-child(2){animation-delay:0.8s}.lane i:nth-child(3){animation-delay:1.6s}
+.lane::after{content:"";position:absolute;right:18%;top:0;bottom:0;width:3px;background:rgba(212,175,55,0.7)}
+@keyframes walk{from{left:-10px}to{left:100%}}
+.queue{display:flex;flex-wrap:wrap;gap:4px;align-content:flex-start;min-height:40px}
+.queue span{width:8px;height:8px;border-radius:999px;background:#E0A84B;opacity:0.85}
+.kitrow{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.08);font-size:15px}
+.kitrow span{color:#AEB6C4}.kitrow strong{text-align:right}
+.mchip2{display:inline-block;margin:0 6px 6px 0;padding:6px 12px;border-radius:999px;border:1px solid rgba(212,175,55,0.5);color:#F3E3B0;font-size:12px;font-weight:700}
+.stepper{display:flex;align-items:center;gap:10px}
+.wprog,.wnav,.wedit{display:none}
+@media (max-width: 760px){
+.wprog{display:flex;align-items:center;gap:14px}.wprog span{display:block;flex:none;white-space:nowrap;margin:0;font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#D4AF37}
+.wbar{flex:1;height:6px;border-radius:999px;background:rgba(255,255,255,0.1);overflow:hidden}.wbar i{display:block;height:100%;background:#D4AF37;border-radius:999px;transition:width 0.35s ease}
+.wstep{display:none}.wstep.is-cur{display:block}
+.wnav{display:flex;gap:10px}.wnav button{flex:1;min-height:52px;border-radius:12px;font-family:inherit;font-size:14px;font-weight:800;letter-spacing:1px;cursor:pointer}
+.wback{background:transparent;color:#E5E9F0;border:1px solid rgba(255,255,255,0.25)}.wnext{background:#D4AF37;color:#0A0F18;border:0}
+.wres{display:none !important}.wres.is-cur{display:grid !important}
+.wedit{display:flex;align-items:center;justify-content:space-between;gap:10px}.wedit span{font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#D4AF37}
+.wedit button{min-height:40px;padding:0 14px;border-radius:999px;border:1px solid rgba(255,255,255,0.25);background:transparent;color:#E5E9F0;font-family:inherit;font-weight:700;cursor:pointer}
+.wdone .wstep,.wdone .wprog,.wdone .wnav{display:none !important}
+}
+.stepper button{width:44px;height:44px;border-radius:12px;border:1px solid rgba(255,255,255,0.25);background:#12203A;color:#FFFFFF;font-size:20px;font-weight:800;cursor:pointer}
+@media (prefers-reduced-motion: reduce){.lane i{animation:none;left:40%}}
+.planhero{background-color:#070B12;background-image:linear-gradient(180deg, rgba(7,11,18,0.5) 0%, rgba(7,11,18,0.62) 55%, #070B12 100%), url(/_blob/a10151f2e1291ce6adefa2a45a8da3bb);background-size:cover;background-position:center 60%}
+.gbg{background-image:linear-gradient(rgba(212,175,55,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(212,175,55,0.07) 1px, transparent 1px), linear-gradient(rgba(140,170,220,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(140,170,220,0.035) 1px, transparent 1px);background-size:120px 120px, 120px 120px, 24px 24px, 24px 24px;background-position:center top}
+@media (max-width: 760px){.planhero{background-image:linear-gradient(180deg, rgba(7,11,18,0.6) 0%, rgba(7,11,18,0.72) 55%, #070B12 100%), url(/_blob/47c50da77c68f620b964f48177244986);background-position:center bottom;padding-bottom:72px !important}}
+</style>
+</helmet>
+<div style="font-family:'Montserrat', 'Segoe UI', sans-serif; color:#FFFFFF; background:#070B12; width:100%">
+<section class="planhero" style="padding:0 0 110px">
+<header class="wrap" style="width:100%; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:20px; padding-top:26px; padding-bottom:26px">
+<a href="Main.dc.html"><img fetchpriority="high" width="320" height="55" src="/_blob/b6319d69e6a30b8740eaac2e7617242e" alt="WIRTIX" style="height:26px; width:auto"></a>
+<nav class="dnav" style="display:flex; flex-wrap:wrap; gap:34px; font-size:13px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase"><a href="Platform.dc.html" style="color:#E5E9F0; text-decoration:none">Platform</a><a href="Main.dc.html#solusi" style="color:#E5E9F0; text-decoration:none">Solutions</a><a href="#" style="color:{{accent}}; text-decoration:none">Plan Your Event</a><a href="Company.dc.html" style="color:#E5E9F0; text-decoration:none">Company</a></nav>
+<a href="https://wa.me/6287878781670?text=Halo%20WIRTIX%2C%20saya%20ingin%20menjadwalkan%20demo%20untuk%20acara%20saya." target="_blank" rel="noopener" class="btn dright" style="min-height:44px; padding:0 22px; background:{{accent}}; color:#0A0F18; font-size:12px">Jadwalkan Demo</a>
+<button type="button" class="burger" onClick="{{toggleMenu}}" aria-label="Menu" aria-expanded="{{menuAria}}"><span style="{{bar1}}"></span><span style="{{bar2}}"></span><span style="{{bar3}}"></span></button>
+</header>
+<sc-if value="{{menuOpen}}" hint-placeholder-val="{{ false }}"><div class="mmenu"><a href="Platform.dc.html" onClick="{{closeMenu}}">Platform</a><a href="Main.dc.html#solusi" onClick="{{closeMenu}}">Solutions</a><a href="#" onClick="{{closeMenu}}">Plan Your Event</a><a href="Company.dc.html" onClick="{{closeMenu}}">Company</a></div></sc-if>
+<div class="wrap" style="padding-top:56px; text-align:center">
+<p class="kicker">Plan Your Event</p>
+<h1 style="margin:0 auto 18px; font-size:clamp(34px, 4.2vw, 58px); line-height:1.08; font-weight:900; letter-spacing:-1px; max-width:860px">Plan Your Event in 60 Seconds.</h1>
+<p style="margin:0 auto; font-size:18px; line-height:1.7; color:#C9D0DB; max-width:640px">Jawab 4 pertanyaan singkat dan lihat rekomendasi modul, perangkat, serta skema kemitraan untuk acara Anda.</p>
+</div>
+</section>
+<section class="gbg" style="padding:56px 0 110px">
+<div class="wrap {{doneCls}}" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(440px, 100%), 1fr)); gap:28px; align-items:start">
+<div style="display:grid; gap:16px">
+<div class="wprog"><span>Langkah {{stepNo}} dari 4</span><div class="wbar"><i style="{{progStyle}}"></i></div></div>
+<div class="pbox wstep {{w1}}"><div class="pstep"><b>1</b><h3>Event Type</h3></div>
+<div style="display:flex; flex-wrap:wrap; gap:8px"><sc-for list="{{types}}" as="t" hint-placeholder-count="5"><button type="button" class="opt" onClick="{{t.pick}}" style="{{t.style}}">{{t.label}}</button></sc-for></div></div>
+<div class="pbox wstep {{w2}}"><div class="pstep"><b>2</b><h3>Expected Visitors</h3></div>
+<div style="display:flex; align-items:baseline; gap:10px; margin-bottom:6px"><span class="big2">{{visitorsLabel}}</span><span style="color:#9AA4B5">pengunjung</span></div>
+<input type="range" min="100" max="50000" step="100" value="{{visitors}}" onInput="{{setVisitors}}" aria-label="Jumlah pengunjung"></div>
+<div class="pbox wstep {{w3}}"><div class="pstep"><b>3</b><h3>Entry Window</h3></div>
+<p style="margin:0 0 10px; color:#AEB6C4; font-size:14px">Berapa lama semua tamu harus sudah masuk?</p>
+<div style="display:flex; align-items:baseline; gap:10px; margin-bottom:6px"><span class="big2">{{win}}</span><span style="color:#9AA4B5">menit</span></div>
+<input type="range" min="30" max="180" step="15" value="{{win}}" onInput="{{setWin}}" aria-label="Waktu masuk dalam menit"></div>
+<div class="pbox wstep {{w4}}"><div class="pstep"><b>4</b><h3>What Do You Need?</h3></div>
+<div style="display:flex; flex-wrap:wrap; gap:8px"><sc-for list="{{needs}}" as="n" hint-placeholder-count="6"><button type="button" class="opt" onClick="{{n.pick}}" style="{{n.style}}" aria-pressed="{{n.on}}">{{n.label}}</button></sc-for></div>
+<sc-if value="{{hasPos}}" hint-placeholder-val="{{ false }}"><div style="margin-top:16px"><p style="margin:0 0 8px; color:#AEB6C4; font-size:14px">Jumlah tenant / kasir</p><div class="stepper"><button type="button" onClick="{{tenMinus}}" aria-label="Kurangi tenant">−</button><span class="big2" style="min-width:56px; text-align:center">{{tenants}}</span><button type="button" onClick="{{tenPlus}}" aria-label="Tambah tenant">+</button></div></div></sc-if>
+</div>
+<div class="wnav"><button type="button" class="wback" onClick="{{wBack}}" style="{{backStyle}}">← Kembali</button><button type="button" class="wnext" onClick="{{wNext}}">{{nextLabel}}</button></div>
+</div>
+<div class="wres {{resCls}}" style="display:grid; gap:16px">
+<div class="wedit"><span>Rekomendasi untuk acara Anda</span><button type="button" onClick="{{wEdit}}">Ubah jawaban</button></div>
+<div class="pbox" style="border-color:rgba(212,175,55,0.45)">
+<p class="kicker" style="margin-bottom:10px">Entrance Simulation</p>
+<div class="sim">
+<div style="display:flex; justify-content:space-between; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#7E889A; margin-bottom:6px"><span>Antrean</span><span>Gerbang</span></div>
+<div class="queue" style="{{queueBox}}"><sc-for list="{{qdots}}" as="q" hint-placeholder-count="10"><span></span></sc-for></div>
+<sc-for list="{{lanes}}" as="l" hint-placeholder-count="6"><div class="lane"><i></i><i></i><i></i></div></sc-for>
+<p style="margin:8px 0 0; font-size:12px; color:#7E889A">{{laneNote}}</p>
+</div>
+<div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px; margin-top:18px">
+<div><p style="margin:0 0 6px; font-size:13px; color:#AEB6C4">Gate scanner</p><div class="stepper"><button type="button" onClick="{{scMinus}}" aria-label="Kurangi scanner">−</button><span class="big2" style="min-width:56px; text-align:center">{{scan}}</span><button type="button" onClick="{{scPlus}}" aria-label="Tambah scanner">+</button></div></div>
+<div style="{{timeBox}}"><p style="margin:0; font-size:13px">Semua tamu masuk dalam</p><p style="margin:4px 0 0; font-size:28px; font-weight:900">±{{timeMin}} menit {{timeMark}}</p></div>
+</div>
+<p style="margin:12px 0 0; font-size:13px; color:#9AA4B5">Asumsi: 1 scanner memproses ±500 orang per jam. Rekomendasi untuk acara Anda: <strong style="color:#FFFFFF">{{rec}} scanner</strong>.</p>
+</div>
+<div class="pbox">
+<p class="kicker" style="margin-bottom:6px">Your Recommended Setup</p>
+<h3 style="margin:0 0 14px; font-size:20px; font-weight:800">{{typeLabel}} · {{visitorsLabel}} pengunjung</h3>
+<div style="margin-bottom:10px"><sc-for list="{{modules}}" as="md" hint-placeholder-count="4"><span class="mchip2">{{md}}</span></sc-for></div>
+<div class="kitrow"><span>Partnership scheme</span><strong>{{scheme}}</strong></div>
+<div class="kitrow"><span>Gate scanner</span><strong>{{scan}} + {{standby}} cadangan</strong></div>
+<div class="kitrow"><span>Edge server</span><strong>1 unit</strong></div>
+<sc-if value="{{hasPos}}" hint-placeholder-val="{{ false }}"><div class="kitrow"><span>Android EDC / POS</span><strong>{{tenants}} unit</strong></div></sc-if>
+<div class="kitrow" style="border-bottom:0"><span>Similar project</span><strong>{{similar}}</strong></div>
+<p style="margin:10px 0 18px; font-size:12px; line-height:1.6; color:#7E889A">Estimasi awal untuk perencanaan. Kebutuhan final kami pastikan bersama saat konsultasi.</p>
+<a href="{{waLink}}" target="_blank" rel="noopener" class="btn" style="width:100%; background:{{accent}}; color:#0A0F18">Kirim rencana ini via WhatsApp</a>
+</div>
+</div>
+</div>
+</section>
+<div class="fph" style="padding:28px 0; border-top:1px solid rgba(255,255,255,0.08); font-size:13px; color:#8A93A6; text-align:center">[Footer — lihat artboard Footer]</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#D4AF37","options":["#D4AF37","#E0B94A","#C9A227"]},"$preview":{"width":1440,"height":1620}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { menuOpen: false, type: 'corporate', visitors: 2000, win: 60, needs: ['gate', 'wa'], tenants: 10, scan: null, step: 1 };
+  }
+  renderVals() {
+    const accent = this.props.accent ?? '#D4AF37';
+    const st = this.state;
+    const T = { concert: ['Concert / Festival', 90], sports: ['Sports', 90], corporate: ['Corporate', 60], school: ['School', 60], expo: ['Expo / Venue', 180] };
+    const N = { ticket: 'Ticket sales', seat: 'Seating plan', gate: 'Gate access', pos: 'F&B / merch POS', wa: 'WhatsApp e-ticket', data: 'Sponsor data' };
+    const MOD = { ticket: 'Ticketing', seat: 'Seating Plan', gate: 'Gate Access', pos: 'POS & Payments', wa: 'WhatsApp Bot', data: 'CRM & Analytics' };
+    const SIM = { concert: 'Motorsport — White-Label Ticketing', sports: 'Motorsport — White-Label Ticketing', corporate: 'Corporate — QR Wristband 4.5K+', school: 'School — Graduation Add-Ons', expo: 'Lifestyle Expo — Closed-Loop POS' };
+    const on = 'background:' + accent + '; color:#0A0F18; border:1px solid ' + accent + ';';
+    const off = 'background:transparent; color:#E5E9F0; border:1px solid rgba(255,255,255,0.25);';
+    const rec = Math.max(1, Math.ceil(st.visitors / (500 * st.win / 60)));
+    const scan = st.scan == null ? rec : st.scan;
+    const timeMin = Math.ceil(st.visitors / (500 * scan) * 60);
+    const ok = timeMin <= st.win;
+    const standby = Math.max(1, Math.ceil(scan / 5));
+    const hasPos = st.needs.includes('pos');
+    const scheme = (st.needs.includes('ticket') ? 'Transaction-Based' : 'Data Acquisition') + (hasPos ? ' + POS & Merchant' : '');
+    const modules = st.needs.map((k) => MOD[k]);
+    const over = Math.max(0, timeMin - st.win);
+    const qn = Math.min(60, Math.round(over / Math.max(st.win, 1) * 30));
+    const laneCount = Math.min(scan, 10);
+    const fmt = (n) => n.toLocaleString('id-ID');
+    const msg = 'Halo WIRTIX, saya merencanakan acara ' + T[st.type][0] + ' untuk ±' + fmt(st.visitors) + ' pengunjung, waktu masuk ' + st.win + ' menit. Rekomendasi: ' + scan + ' scanner + ' + standby + ' cadangan, 1 edge server' + (hasPos ? ', ' + st.tenants + ' POS' : '') + '. Skema: ' + scheme + '. Saya ingin konsultasi.';
+    const mo = st.menuOpen;
+    const bar = (r) => 'display:block; width:18px; height:2px; border-radius:2px; background:#FFFFFF; transition:transform 0.25s ease, opacity 0.2s ease; ' + r;
+    const step = st.step;
+    return {
+      accent,
+      w1: step === 1 ? 'is-cur' : '', w2: step === 2 ? 'is-cur' : '', w3: step === 3 ? 'is-cur' : '', w4: step === 4 ? 'is-cur' : '',
+      stepNo: Math.min(step, 4), progStyle: 'width:' + (Math.min(step, 4) * 25) + '%',
+      nextLabel: step >= 4 ? 'Lihat Rekomendasi →' : 'Lanjut →',
+      backStyle: step > 1 ? '' : 'visibility:hidden',
+      wNext: () => this.setState({ step: Math.min(5, this.state.step + 1) }),
+      wBack: () => this.setState({ step: Math.max(1, this.state.step - 1) }),
+      wEdit: () => this.setState({ step: 1 }),
+      resCls: step >= 5 ? 'is-cur' : '', doneCls: step >= 5 ? 'wdone' : '',
+      menuOpen: mo, menuAria: mo ? 'true' : 'false',
+      toggleMenu: () => this.setState({ menuOpen: !this.state.menuOpen }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      bar1: bar(mo ? 'transform:translateY(7px) rotate(45deg)' : ''), bar2: bar(mo ? 'opacity:0' : ''), bar3: bar(mo ? 'transform:translateY(-7px) rotate(-45deg)' : ''),
+      types: Object.keys(T).map((k) => ({ label: T[k][0], style: k === st.type ? on : off, pick: () => this.setState({ type: k, win: T[k][1], scan: null }) })),
+      needs: Object.keys(N).map((k) => ({ label: N[k], on: st.needs.includes(k) ? 'true' : 'false', style: st.needs.includes(k) ? on : off,
+        pick: () => this.setState({ needs: this.state.needs.includes(k) ? this.state.needs.filter((x) => x !== k) : Object.keys(N).filter((x) => x === k || this.state.needs.includes(x)) }) })),
+      visitors: st.visitors, visitorsLabel: fmt(st.visitors), win: st.win, tenants: st.tenants, hasPos,
+      setVisitors: (e) => this.setState({ visitors: Number(e.target.value), scan: null }),
+      setWin: (e) => this.setState({ win: Number(e.target.value), scan: null }),
+      tenMinus: () => this.setState({ tenants: Math.max(1, this.state.tenants - 1) }),
+      tenPlus: () => this.setState({ tenants: Math.min(200, this.state.tenants + 1) }),
+      rec, scan, standby, timeMin, timeMark: ok ? '✓' : '',
+      scMinus: () => this.setState({ scan: Math.max(1, scan - 1) }),
+      scPlus: () => this.setState({ scan: Math.min(200, scan + 1) }),
+      timeBox: 'padding:12px 16px; border-radius:12px; ' + (ok ? 'background:rgba(212,175,55,0.14); color:' + accent + '; border:1px solid ' + accent + ';' : 'background:rgba(224,168,75,0.12); color:#E0A84B; border:1px solid #E0A84B;'),
+      queueBox: qn > 0 ? '' : 'min-height:0',
+      qdots: Array.from({ length: qn }, (_, i) => i),
+      lanes: Array.from({ length: laneCount }, (_, i) => i),
+      laneNote: scan > laneCount ? 'Menampilkan 10 dari ' + scan + ' gerbang' : (qn > 0 ? 'Antrean menumpuk — tambah scanner untuk mempercepat' : 'Arus masuk lancar'),
+      typeLabel: T[st.type][0], scheme, modules: modules.length ? modules : ['Pilih kebutuhan di langkah 4'],
+      similar: SIM[st.type],
+      waLink: 'https://wa.me/6287878781670?text=' + encodeURIComponent(msg)
+    };
+  }
+}
+</script>
+</body>
+</html>
